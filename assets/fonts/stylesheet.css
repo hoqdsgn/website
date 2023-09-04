@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'SinkinSans';
+    src: url('SinkinSans-100Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SinkinSans';
+    src: url('SinkinSans-200XLight.woff2') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SinkinSans';
+    src: url('SinkinSans-300Light.woff2') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SinkinSans';
+    src: url('SinkinSans-500Medium.woff2') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SinkinSans';
+    src: url('SinkinSans-600SemiBold.woff2') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+

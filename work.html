@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/hes-gallery.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <link rel="stylesheet" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" media="screen" href="assets/css/mobile.css">
+    <title>HOQdsgn - Work</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-dark" data-aos="fade-down" data-aos-duration="500">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <a class="navbar-brand mr-5" href="#"><img src="assets/img/main-logo.svg" class="navbar-brand"></a>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 menu-wrapper">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            <img src="assets/img/translation.svg" class="translation-icon">
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">English (US)</a>
+                            <a class="dropdown-item" href="#">Bahasa Indonesia</a>
+                          </div>
+                      </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="section-work-banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-carousel1  carousel-hero owl-theme">
+                        <div class="item">
+                            <a href="work-packaging.html">
+                            <img src="assets/img/portfolio/packaging.png" class="work-icon">
+                            <span class="sub-title">PACKAGING<br>DESIGN</span>
+                            <img src="assets/img/hr-red.svg" class="hr-line">
+                        </a>
+                        </div>
+                        <div class="item" href="portfolio__123">
+                            <a href="work-illustration.html">
+                            <img src="assets/img/portfolio/illustration.png" class="work-icon">
+                            <span class="sub-title">PRODUCT<br>ILLUSTRATION</span>
+                            <img src="assets/img/hr-blue.svg" class="hr-line">
+                            </a>
+                        </div>
+                        <div class="item" href="portfolio__12134">
+                            <a href="work-character.html">
+                            <img src="assets/img/portfolio/character.png" class="work-icon">
+                            <span class="sub-title">CHARACTER<br>DESIGN</span>
+                            <img src="assets/img/hr-pink.svg" class="hr-line">
+                        </a>
+                        </div>
+                        <div class="item" href="portfolio__121331">
+                            <a href="work-corporate.html">
+                            <img src="assets/img/portfolio/corporate@4x.png" class="work-icon">
+                            <span class="sub-title">CORPORATE<br>IDENTITY</span>
+                            <img src="assets/img/hr-orange.svg" class="hr-line">
+                        </a>
+                        </div>
+                        <div class="item" href="portfolio__121331">
+                            <a href="work-printed.html">
+                            <img src="assets/img/portfolio/printed-media.png" class="work-icon">
+                            <span class="sub-title">PRINTED<br>MEDIA</span>
+                            <img src="assets/img/hr-green.svg" class="hr-line">
+                        </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- js -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/hes-gallery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script>
+        var mymap = L.map('mapid').setView([-6.870464, 107.548002], 15);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: '',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+    </script>
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".navbar.fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+        $(document).ready(function() {
+            $(".navbar-toggler").click(function() {
+                $("nav").addClass("navbar-white");
+            });
+        });
+    </script>
+    <script>
+        var owl = $('.owl-carousel1');
+owl.owlCarousel({
+    loop:true,
+    nav:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },            
+        960:{
+            items:3
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+    </script>
+    <script>
+        $(function() {
+            if ($(window).width() > 992) {
+                AOS.init();
+            } else {
+                AOS.init({
+                    disable: true
+                });
+            }
+        });
+        $(window).on('resize', function() {
+            AOS.init();
+            if ($(window).width() <= 992) { // destroy aos
+                AOS.init({
+                    disable: true
+                });
+            } else {
+                AOS.init();
+            }
+        });
+    </script>
+    <script>
+        // Add smooth scrolling on all links inside the navbar
+        $(".navbar a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+
+            } // End if
+
+        });
+    </script>
+    <script>
+        //loader
+        const preloader = document.querySelector('.preloader');
+
+        const fadeEffect = setInterval(() => {
+        if (!preloader.style.opacity) {
+            preloader.style.opacity = 1;
+        }
+        if (preloader.style.opacity > 0) { 
+            preloader.style.opacity -= 1;
+        } else {
+            clearInterval(fadeEffect);
+            $(".preloader").addClass("loaded");
+        }
+        }, 10000);
+
+    </script>
+</body>
+
+</html>

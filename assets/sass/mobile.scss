@@ -1,0 +1,278 @@
+
+@media(max-width: 1280px) {
+    #section-home {
+        .hero-wrapper{
+            .hero-title{
+                .bottom-title, .upper-title{
+                    font-size: 1rem;
+                }
+        }
+        
+        }
+    }
+}
+@media(min-width: 992px) {
+    .mobile-only{
+        display: none !important;
+    }
+}
+@media(max-width: 991px) {
+    .navbar{
+        background: #000;
+    }
+    .desktop-only{
+        display: none !important;
+    }
+    .pre-title{
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 50%;
+        margin-top: 15px;
+    }
+    #section-home .hero-wrapper {
+        height: 50vh;
+    }
+    h2{
+        text-align: center;
+    }
+    h2:after {
+        margin: auto;
+        margin-top: 15px;
+    }
+    .pull-right{
+        align-items: center;
+    }
+    #section-project {
+        text-align: left;
+    }
+    .section-footer .app-logo img {
+        width: 100%;
+        display: flex;
+        margin: 15px auto 30px;
+        float: unset;
+    }
+    .section-footer .app-logo {
+        width: 100%;
+    }
+    #section-home .hero-wrapper .heart-rate {
+        transform: scale(.6);
+    }
+}
+@media(max-width: 1199px) {
+    #section-about .img-wrapper .img4 {
+        position: absolute;
+        height: 362px;
+        right: 30px;
+        top: -150px;
+    }
+    #section-about .img-wrapper .img3 {
+        position: absolute;
+        height: 230px;
+        left: 0px;
+        bottom: 180px;
+    }
+    #section-project .img-wrapper .img1 {
+        position: absolute;
+        left: 36px;
+        bottom: 106px;
+        height: 183px;
+        transform: rotate(18deg);
+    }
+    #section-project .img-wrapper .img2 {
+        position: absolute;
+        left: 174px;
+        height: 300px;
+        bottom: 50px;
+    }
+    #section-project .img-wrapper .img3 {
+        position: absolute;
+        right: 80px;
+        height: 350px;
+        transform: rotate(-15deg);
+        top: 74px;
+    }
+    #section-home{
+        height: auto;
+        h1{
+            font-size: 48px;
+        }
+    }
+    .navbar-brand{
+        margin-right: 5px !important;
+    }
+    .navbar{
+        .navbar-nav{
+            .nav-link{
+                font-size: 14px;
+            }
+        }
+        .auth-btn{
+            .btn {
+                padding: 5px 20px;
+            }
+        } 
+    }
+}
+@media(max-width: 768px) {
+    .navbar .navbar-brand .school-name {
+        display: inline;
+    }
+    #section-osis{
+        .owl-carousel{
+            .item{
+                .card{
+                    width: 80%;
+                    display: flex;
+                    margin: auto;
+                }
+            }
+            .owl-nav{
+                button{
+                    &.owl-next{
+                        right: 0;
+                    }
+                    &.owl-prev{
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    #section-program{
+        .owl-carousel{
+            .owl-nav{
+                button{
+                    &.owl-next{
+                        right: -15px;
+                    }
+                    &.owl-prev{
+                        left: -15px;
+                    }
+                }
+            }
+        }
+    }
+    #section-gallery{
+        .masonry-container{
+            columns: 2;
+        }
+    }
+    .mobile-only{
+        display: block !important;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .navbar{
+        &.navbar-transparent{
+            padding:15px;
+        }
+    }
+    section {
+        padding: 60px 0 30px 0;
+    }
+    #section-home {
+        height: unset;
+        p{
+            text-align: center;
+        }
+        .btn-main{
+            margin: auto;
+            display: flex;
+            width: fit-content;
+        }
+    }
+    #section-about{
+        padding-top: 60px;
+    }
+    .section-footer{
+        padding: 30px 0;
+    }
+    #section-about .about__img{
+        width: 50%;
+    }
+}
+@media(max-width: 767px) {
+    .section-footer ul.footer-link {
+        width: fit-content;
+        direction: unset;
+        list-style-type: none;
+        margin: 0 auto 30px;
+        padding: 0;
+    }
+    .section-footer ul.footer-link li {
+        text-align: center;
+        text-indent: -5px;
+    }
+    .section-footer .copyright-text {
+        margin-right: 30px;
+        text-align: center;
+        display: block;
+    }
+    #section-home .hero-wrapper .hero-title .img-title {
+        width: 60vw;
+    }
+    .section-footer .app-logo img {
+        width: 100px;
+    }
+    #section-home .owl-carousel .owl-item .item .banner-text {
+        bottom: 90px;
+    }
+    #section-about .about__img{
+        width: 80%;
+        height: 330px;
+    }
+    #section-about .about__img img#img-1 {
+        left: -30px;
+    }
+    h2{
+        text-align: center;
+        &:after{
+            margin: 15px auto;
+            display: flex;
+        }
+    }
+    #section-home .owl-carousel .owl-item .item .banner-item {
+        height: 100vh;
+    }
+    #section-home .owl-carousel .owl-item .item .banner-text {
+        width: 100%;
+    }
+    #section-home .owl-carousel .owl-item .item .banner-text .banner-title {
+        font-size: 32px;
+    }
+    
+    #section-program{
+        .owl-carousel{
+            .item{
+                .img-program{
+                    height: 180px;
+                    margin-bottom: 15px;
+                }
+                h5{
+                    font-size: 24px;
+                    text-align: center;
+                    &:after{
+                        display: none;
+                    }
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #section-osis .owl-carousel .item .card {
+        width: 100%;
+        .card-img{
+            border-radius: 15px 15px 0 0;
+        }
+    }
+    .section-footer{
+        text-align: center;
+    }
+    .navbar.scrolled {
+        padding: 10px 15px;
+    }
+}
