@@ -678,10 +678,15 @@ hr {
 }
 
 .bg-img-red {
-  background: url("../img/bg-blue.png");
+  background: url("../img/RED GLOW.png");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% 200px;
+  background-size: 100% 300px;
+}
+
+.bg-img-purple {
+  background: url("../img/PURPLE GLOW.png");
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
 }
 
 .gold {
