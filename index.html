@@ -20,7 +20,7 @@
     <title>HOQdsgn</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="on_load_text()">
     <div class="preloader">
         <div class="loader-wrapper">
             <div class="background">
@@ -38,7 +38,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-navbar">
-            <a class="navbar-brand mr-5" href="#"><img src="assets/img/main-logo.svg" class="navbar-brand"></a>
+            <a class="navbar-brand mr-5" href="index.html"><img src="assets/img/main-logo.svg" class="navbar-brand"></a>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0 menu-wrapper">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">HOME</a>
@@ -55,8 +55,8 @@
                             <img src="assets/img/translation.svg" class="translation-icon">
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">English (US)</a>
-                            <a class="dropdown-item" href="#">Bahasa Indonesia</a>
+                            <a class="dropdown-item" href="javascript:change_language('en');">English (US)</a>
+                            <a class="dropdown-item" href="javascript:change_language('id');">Bahasa Indonesia</a>
                         </div>
                     </div>
                 </li>
@@ -103,18 +103,10 @@
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1400">
                     <img src="assets/img/laptop-full.png" class="mobile-only w-70 m-auto mb-5 d-flex">
-                    <span class="pre-title"><b>Is design necessary</b> for your business?</span>
-                    <h2 class="m-0">Design is your<br>product identity</h2>
+                    <span class="pre-title insert-text"></span>
+                    <h2 class="m-0 insert-text"></h2>
                     <hr class="my-3">
-                    <p class="text-center text-sm-left">
-                        HOQDSign is a professional graphic design
-                        company, that has been around since 1997 with
-                        a good reputation and outstanding work in the
-                        field of design as a good creative solution for a
-                        great development or the creative of one's
-                        identity or product, brochure design,
-                        catalogue, display, packaging design and more
-                        printing product.
+                    <p class="text-center text-sm-left insert-text">
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -147,16 +139,13 @@
                     </div>
                 </div>
                 <div class="col-lg-4 pull-right" data-aos="fade-up" data-aos-duration="1400">
-                    <span class="pre-title">Our Project</span>
+                    <span class="pre-title insert-text"></span>
                     <div class="w-100 text-center text-sm-right m-0">
-                        <h2 class="m-0">PACKAGING<br>DESIGN</h2>
-                        <span>Pouch, Sachet, Label, etc</span>
+                        <h2 class="m-0 insert-text"></h2>
+                        <span class="insert-text"></span>
                         <hr class="my-3">
                     </div>
-                    <p class="text-center text-sm-right">
-                        it is an honor for us to have been trusted nationwide and to have the privilege to help the Food
-                        and Rice Enterpreneurs throught Indonesian. Thanks to more than 1000 brands that have been
-                        entrusted... we will continue to provide the best for your improvement...
+                    <p class="text-center text-sm-right insert-text">
                     </p>
                 </div>
             </div>
@@ -166,20 +155,14 @@
         <div class="container">
             <div class="row d-flex flex-column-reverse flex-lg-row flex-xs-column-reverse">
                 <div class="col-lg-5" data-aos="fade-up" data-aos-duration="1400">
-                    <span class="title-bubble mx-auto mx-sm-0 my-3"
-                        style="color: black; background-color: lightskyblue;">Our
-                        Product</span>
+                    <span class="title-bubble mx-auto mx-sm-0 my-3 insert-text"
+                        style="color: black; background-color: lightskyblue;"></span>
                     <div class="w-100 text-center text-sm-left m-0">
-                        <h2 class="m-0">PRODUCT<br>ILLUSTRATION</h2>
-                        <span>Ice Cream, Snack, Candy, etc</span>
+                        <h2 class="m-0 insert-text"></h2>
+                        <span class="insert-text"></span>
                         <hr class="my-3">
                     </div>
-                    <p class="text-center text-sm-left">
-                        One of our proficiency is to draw
-                        up your product from scratch in
-                        order to customize it and make it
-                        as eye catching in the digital art
-                        aspect.
+                    <p class="text-center text-sm-left insert-text">
                     </p>
                 </div>
                 <div class="col-lg-7 bg-img-purple">
@@ -215,11 +198,10 @@
                     </div>
                 </div>
                 <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                    <span class="title-bubble my-3" style="color: white; background-color: red;">Our Product</span>
-                    <h3>CHARACTER DESIGN</h3>
-                    <span class="my-2">Mascot, Caricature, Cartoon, etc</span>
-                    <p>Creating entertaining characters to increase brand awareness on potential customers
-                        and create a unique characteristic for your product.</p>
+                    <span class="title-bubble my-3 insert-text" style="color: white; background-color: red;"></span>
+                    <h3 class="insert-text"></h3>
+                    <span class="my-2 insert-text"></span>
+                    <p class="insert-text"></p>
                 </div>
             </div>
         </div>
@@ -236,20 +218,13 @@
                     </div>
                 </div>
                 <div class="col-lg-4 pull-right" data-aos="fade-up" data-aos-duration="1400">
-                    <span class="title-bubble mx-auto mx-sm-0 my-3 gold" style="color: black;">Our
-                        Product</span>
+                    <span class="title-bubble mx-auto mx-sm-0 my-3 gold insert-text" style="color: black;"></span>
                     <div class="w-100 text-center text-sm-right m-0">
-                        <h2 class="m-0">OTHERS</h2>
-                        <span>Car Sticker, Brochure, Banner, etc</span>
+                        <h2 class="m-0 insert-text"></h2>
+                        <span class="insert-text"></span>
                         <hr class="my-3 gold">
                     </div>
-                    <p class="text-center text-sm-right">
-                        Don't let your product be unknown
-                        to potential customers because
-                        there's a lack of brand awareness
-                        for your product.
-                        Put your trust in us, we are ready to
-                        put it in the form of Brochures,
+                    <p class="text-center text-sm-right insert-text">
                     </p>
                 </div>
             </div>
@@ -259,7 +234,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2>Our Client</h2>
+                    <h2 class="insert-text">Our Client</h2>
                     <!-- <img src="assets/img/logo-wrapper@4x.png" class="img-client"> -->
                     <div class="client-wrapper">
                         <img src="assets/img/logo/Asset 4.svg">
@@ -329,7 +304,7 @@
                 <div class="col-md-7 ml-auto float-right mt-auto">
                     <ul class="footer-link">
                         <li>
-                            <a href="#">HOME</a>
+                            <a href="index.html">HOME</a>
                         </li>
                         <li>
                             <a href="work.html">WORK</a>
@@ -495,6 +470,35 @@
             }
         }, 6000);
 
+    </script>
+    <script>
+        // change languages
+        function change_language(language) {
+            localStorage.setItem("myLanguage", language)
+            load_text(language)
+        }
+        // load text data for english and indonesian languages from the specific file mentioned.
+        function load_text(language) {
+            fetch('./text/index.json')
+                .then(res => res.json())
+                .then(data => {
+                    var array = data[language]
+                    var classElement = document.getElementsByClassName("insert-text")
+                    array.forEach((text, i) => {
+                        classElement[i].innerHTML = text
+                    });
+                })
+        }
+
+        // on load function to grab local storage for default language prefered.
+        function on_load_text() {
+            var language = localStorage.getItem("myLanguage");
+            if (language == null) {
+                localStorage.setItem("myLanguage", "en")
+                language = "en"
+            }
+            load_text(language)
+        }
     </script>
 </body>
 

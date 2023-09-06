@@ -21,7 +21,7 @@
     <title>HOQdsgn</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="on_load_text()">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-dark" data-aos="fade-down"
         data-aos-duration="500">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
@@ -29,7 +29,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-navbar">
-            <a class="navbar-brand mr-5" href="#"><img src="assets/img/main-logo.svg" class="navbar-brand"></a>
+            <a class="navbar-brand mr-5" href="index.html"><img src="assets/img/main-logo.svg" class="navbar-brand"></a>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0 menu-wrapper">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">HOME</a>
@@ -46,8 +46,8 @@
                             <img src="assets/img/translation.svg" class="translation-icon">
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">English (US)</a>
-                            <a class="dropdown-item" href="#">Bahasa Indonesia</a>
+                            <a class="dropdown-item" href="javascript:change_language('en');">English (US)</a>
+                            <a class="dropdown-item" href="javascript:change_language('id');">Bahasa Indonesia</a>
                         </div>
                     </div>
                 </li>
@@ -58,21 +58,17 @@
         <div class="container">
             <div class="shadow p-3 p-md-5 d-flex flex-column-reverse flex-lg-row flex-xs-column-reverse">
                 <div class="col-lg-6">
-                    <span class="title-section mb-2" style="background-color: red;">
+                    <span class="title-section mb-2 insert-text" style="background-color: red;">
                         About Us
                     </span>
-                    <h3 style="font-weight: 100;">Kami bangga menjadi agensi</h3>
-                    <h3>Design yang PROGRESIF</h3>
+                    <h3 style="font-weight: 100;" class="insert-text"></h3>
+                    <h3 class="insert-text"></h3>
                     <hr class="bg-light">
-                    <p class="mt-4" style="font-weight: 100; font-size: small;">
-                        Sejak 1997, Kami bekerja dengan perusahaan untuk menciptakan dunia
-                        yang penuh warna melalui desain dan karya seni kami yang luar biasa.
-                        Tanpa ragu, kami memastikan bahwa perusahaan dan produk Anda akan
-                        ditangani dengan cermat untuk kepuasan Anda.
+                    <p class="mt-4 insert-text" style="font-weight: 100; font-size: small;">
+
                     </p>
-                    <p class="mt-4" style="font-weight: 100; font-size: small;">
-                        Kami melayani semua jenis perusahaan yang telah puas dengan
-                        kemajuan setelah mempercayai kami. Jadi tunggu apa lagi?
+                    <p class="mt-4 insert-text" style="font-weight: 100; font-size: small;">
+
                     </p>
                 </div>
                 <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
@@ -86,8 +82,8 @@
         <div class="container">
             <div class="col-lg-12 mx-auto text-center">
                 <img src="assets/img/ABOUT US.svg" width="80%" class="mx-auto d-block mb-5" />
-                <h4 class="text-center" style="font-weight: 100;">Dengan Pelanggan di seluruh dunia</h4>
-                <h4 class="text-center" style="font-weight: 100;">kami siap melayani anda</h4>
+                <h4 class="text-center insert-text" style="font-weight: 100;"></h4>
+                <h4 class="text-center insert-text" style="font-weight: 100;"></h4>
                 <img src="assets/img/bg-red.svg" class="img-vert" style="opacity: .5;" width="100%" height="50px" />
             </div>
         </div>
@@ -98,9 +94,9 @@
             <div class="d-flex flex-column-reverse flex-lg-row flex-xs-column-reverse">
                 <div class="col-lg-4 justify-content-end">
                     <!-- <div class="ml-auto col-lg-7"> -->
-                    <p style="color: rgb(187, 4, 38);">Yuk, Diskusi IDE!</p>
-                    <h3 style="font-weight: 100;">MELAYANI DENGAN SENANG HATI</h3>
-                    <h5 style="font-weight: 100;">Contact Us At:</h5>
+                    <p style="color: rgb(187, 4, 38);" class="insert-text"></p>
+                    <h3 style="font-weight: 100;" class="insert-text"></h3>
+                    <h5 style="font-weight: 100;" class="insert-text"></h5>
                     <hr class="bg-light">
                     <ul class="fa-ul" style="--fa-li-margin: 1.8em;">
                         <li class="p-2">
@@ -149,8 +145,8 @@
         <div class="container">
             <div class="d-flex flex-column-reverse flex-lg-row flex-xs-column-reverse">
                 <div class="col-lg-6">
-                    <h3 class="font-weight-light">Work with Us!</h3>
-                    <h3 class="font-weight-light">For further enquiry:</h3>
+                    <h3 class="font-weight-light insert-text"></h3>
+                    <h3 class="font-weight-light insert-text"></h3>
                     <form action="https://formsubmit.co/hoqdsign@gmail.com" method="POST">
                         <div class="form-group">
                             <input class="w-100 rounded border-0 p-2" type="email" name="email" placeholder="Your Email"
@@ -208,13 +204,13 @@
                 <div class="col-md-7 ml-auto float-right mt-auto">
                     <ul class="footer-link">
                         <li>
-                            <a href="#">HOME</a>
+                            <a href="index.html">HOME</a>
                         </li>
                         <li>
                             <a href="work.html">WORK</a>
                         </li>
                         <li>
-                            <a href="#">ABOUT US</a>
+                            <a href="about.html">ABOUT US</a>
                         </li>
                     </ul>
                     <span class="copyright-text">Copyright © 2022 HOQDsign Inc. All rights reserved</span>
@@ -255,61 +251,6 @@
                 $("nav").addClass("navbar-white");
             });
         });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.owl-carousel.owl-banner').owlCarousel({
-                loop: true,
-                items: 1,
-                nav: true,
-                margin: 10,
-                responsiveClass: true,
-            })
-            $('.owl-carousel.owl-program').owlCarousel({
-                loop: true,
-                items: 1,
-                nav: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    300: {
-                        items: 1,
-                        nav: false,
-                        loop: true,
-                    },
-                    600: {
-                        items: 1,
-                        nav: true,
-                        loop: true,
-                    }
-                }
-            })
-            $('.owl-carousel.owl-osis').owlCarousel({
-                loop: true,
-                nav: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    320: {
-                        items: 1,
-                        nav: false,
-                        loop: false,
-                        margin: 20,
-                    },
-                    600: {
-                        items: 1,
-                        nav: true,
-                        loop: true,
-                    },
-                    1000: {
-                        items: 2,
-                        nav: true,
-                        loop: true,
-                        margin: 20
-                    }
-                }
-            })
-        })
     </script>
     <script>
         $(function () {
@@ -375,6 +316,35 @@
             }
         }, 6000);
 
+    </script>
+    <script>
+        // change languages
+        function change_language(language) {
+            localStorage.setItem("myLanguage", language)
+            load_text(language)
+        }
+        // load text data for english and indonesian languages from the specific file mentioned.
+        function load_text(language) {
+            fetch('./text/about.json')
+                .then(res => res.json())
+                .then(data => {
+                    var array = data[language]
+                    var classElement = document.getElementsByClassName("insert-text")
+                    array.forEach((text, i) => {
+                        classElement[i].innerHTML = text
+                    });
+                })
+        }
+
+        // on load function to grab local storage for default language prefered.
+        function on_load_text() {
+            var language = localStorage.getItem("myLanguage");
+            if (language == null) {
+                localStorage.setItem("myLanguage", "en")
+                language = "en"
+            }
+            load_text(language)
+        }
     </script>
 </body>
 
