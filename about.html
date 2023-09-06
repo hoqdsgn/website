@@ -21,7 +21,7 @@
     <title>HOQdsgn</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="on_load_text()">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-dark" data-aos="fade-down"
         data-aos-duration="500">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
@@ -301,23 +301,7 @@
         });
     </script>
     <script>
-        //loader
-        const preloader = document.querySelector('.preloader');
-
-        const fadeEffect = setInterval(() => {
-            if (!preloader.style.opacity) {
-                preloader.style.opacity = 1;
-            }
-            if (preloader.style.opacity > 0) {
-                preloader.style.opacity -= 1;
-            } else {
-                clearInterval(fadeEffect);
-                $(".preloader").addClass("loaded");
-            }
-        }, 6000);
-
-    </script>
-    <script>
+        document.addEventListener("DOMContentLoaded", on_load_text());
         // change languages
         function change_language(language) {
             localStorage.setItem("myLanguage", language)

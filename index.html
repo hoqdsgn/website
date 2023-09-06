@@ -20,7 +20,7 @@
     <title>HOQdsgn</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="on_load_text()">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="preloader">
         <div class="loader-wrapper">
             <div class="background">
@@ -472,6 +472,7 @@
 
     </script>
     <script>
+        document.addEventListener("DOMContentLoaded", on_load_text());
         // change languages
         function change_language(language) {
             localStorage.setItem("myLanguage", language)
