@@ -1,0 +1,7 @@
+1. Kalau video bisa diperbesar cuman tulisan jadi pixelated. Kalau bisa harus ada video yang lebih high res baru bagus.
+2. Built-in animation nya ada opacity change jadi gk bisa di ubah. Kalau mau change the speed biar gk keliatan.
+3. Done
+4. Doable just need the gradient background
+5. Kalau size websitenya di kecilin (pake device lain) text nya juga bakalan nabrak lagi. Tapi kalau mau di vertically centered bisa.
+6. Just send the video, it's an easy change
+7. Logo yang di kasih blurry, harus pake logo yang high res.

@@ -874,7 +874,7 @@ hr {
 }
 
 #portfolio__1-5 .text-content {
-  margin: 120px 100px;
+  margin: 250px 100px;
 }
 
 #portfolio__1-5 .sub-title {
@@ -1829,6 +1829,10 @@ hr {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: inherit;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: top;
 }
 
 #section-work-banner .carousel-hero .item a {
@@ -1849,8 +1853,8 @@ hr {
 }
 
 #section-work-banner .carousel-hero .item .work-icon {
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  padding: 5%;
   animation: img-anim 1.5s linear infinite;
 }
 
