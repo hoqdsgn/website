@@ -42,11 +42,11 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            <img src="assets/img/translation.svg" class="translation-icon">
+                            <img src="assets/img/translation.svg" class="translation-icon" id="navbaricon">
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">English (US)</a>
-                            <a class="dropdown-item" href="#">Bahasa Indonesia</a>
+                            <a class="dropdown-item" href="javascript:change_language('en');">English (US)</a>
+                            <a class="dropdown-item" href="javascript:change_language('id');">Bahasa Indonesia</a>
                         </div>
                     </div>
                 </li>
@@ -287,6 +287,29 @@
             }
         }, 10000);
 
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", on_load_text());
+        // change languages
+        function change_language(language) {
+            localStorage.setItem("myLanguage", language)
+            on_load_text(language)
+        }
+
+        // on load function to grab local storage for default language prefered.
+        function on_load_text() {
+            var language = localStorage.getItem("myLanguage");
+            if (language == null) {
+                localStorage.setItem("myLanguage", "en")
+                language = "en"
+            }
+            if (language === "en") {
+                document.getElementById('navbaricon').src = "assets/img/english-translate.png";
+            } else {
+                document.getElementById('navbaricon').src = "assets/img/indo-translate.png";
+            }
+        }
     </script>
 </body>
 

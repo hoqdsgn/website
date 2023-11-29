@@ -53,7 +53,7 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            <img src="assets/img/translation.svg" class="translation-icon">
+                            <img src="assets/img/translation.svg" class="translation-icon" id="navbaricon">
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="javascript:change_language('en');">English (US)</a>
@@ -68,32 +68,6 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 hero-wrapper">
-                    <!-- <div class="heart-rate fading__1">
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73"
-                            enable-background="new 0 0 150 73" xml:space="preserve">
-                            <polyline fill="none" stroke="#EA0029" stroke-width="3" stroke-miterlimit="10"
-                                points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486" />
-                        </svg>
-                        <div class="fade-in"></div>
-                        <div class="fade-out"></div>
-                    </div>
-                    <div class="hero-title fading__2">
-                        <span class="upper-title">WE ONLY SERVE</span>
-                        <img src="assets/img/title.svg" class="img-title">
-                        <span class="bottom-title" data-aos="fade-up" data-aos-duration="1000">your <b>SATISFACTION</b>
-                            is <b>OUR PRIDE</b></span>
-                    </div>
-                    <div class="heart-rate fading__3">
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73"
-                            enable-background="new 0 0 150 73" xml:space="preserve">
-                            <polyline fill="none" stroke="#EA0029" stroke-width="3" stroke-miterlimit="10"
-                                points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486" />
-                        </svg>
-                        <div class="fade-in fade-in2"></div>
-                        <div class="fade-out fade-out2"></div>
-                    </div> -->
                     <img src="assets/img/home.gif" alt="hero-title" class="img-fluid" />
                 </div>
             </div>
@@ -101,17 +75,41 @@
     </section>
     <section id="section-about">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex flex-column-reverse flex-lg-row flex-xs-column-reverse">
                 <div class="col-lg-6" data-aos="fade-up" data-aos-duration="700" easing="linear">
-                    <img src="assets/img/laptop-full.png" class="mobile-only w-70 m-auto mb-5 d-flex">
+                    <!-- <img src="assets/img/laptop-full.png" class="mobile-only w-70 m-auto mb-5 d-flex"> -->
                     <span class="pre-title insert-text"></span>
                     <h2 class="m-0 insert-text"></h2>
-                    <hr class="my-3">
-                    <p class="text-center text-sm-left insert-text">
-                    </p>
+                    <div class="col col-lg-9 mr-auto p-0">
+                        <hr class="my-3">
+                        <p class="insert-text" style="text-align: justify;">
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="img-wrapper desktop-only">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="d-lg-none">
+                        <img src="assets/img/laptop full.png" width="100%">
+                    </div>
+                    <div class="row justify-content-center align-items-center d-none d-lg-flex laptop-bg"
+                        style="padding-top: 120px;">
+                        <div class="d-flex flex-column"
+                            style="width: 30%; margin-right: -50px;transform: translate(0px, -120px);">
+                            <img src="SVG/kochandbacken.png" data-aos="zoom-in-up" data-aos-duration="700"
+                                easing="linear" data-aos-offset="200" style="width: 65%;">
+                            <img src="SVG/jvjlogo.png" data-aos="zoom-in-up" data-aos-duration="700" easing="linear"
+                                data-aos-offset="200" style="width: 30%;">
+                            <img src="SVG/flyer.png" data-aos="zoom-in-up" data-aos-duration="700" easing="linear"
+                                data-aos-offset="200">
+                        </div>
+                        <img src="SVG/alfamidiberas.png" data-aos="zoom-in-up" data-aos-duration="700" easing="linear"
+                            data-aos-offset="200"
+                            style="width: 45%; height: auto;margin-right: -80px; transform: translate(0px, -120px);">
+                        <img src="SVG/sandwich.png" data-aos="zoom-in-up" data-aos-duration="700" easing="linear"
+                            data-aos-offset="200"
+                            style="width: 30%; height: auto; margin-right: -100px; margin-top: -190px;transform: translate(0px, -120px);">
+                    </div>
+                </div>
+                <!-- <div class="img-wrapper desktop-only">
                         <img src="assets/img/laptop.png" class="img1">
                         <img src="assets/img/sec1-ChikakoPot1.png" class="img2" data-aos="zoom-in-up"
                             data-aos-duration="700" easing="linear" data-aos-offset="200">
@@ -119,34 +117,34 @@
                             easing="linear" data-aos-offset="200">
                         <img src="assets/img/sec1-suta.png" class="img4" data-aos="zoom-in-up" data-aos-duration="700"
                             easing="linear" data-aos-offset="200">
-                    </div>
-
-                </div>
+                    </div> -->
             </div>
+        </div>
         </div>
     </section>
     <section id="section-project">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <img src="assets/img/project-mobile.png" class="mobile-only w-70 m-auto mb-3 d-flex">
-                    <div class="img-wrapper desktop-only">
-                        <img src="assets/img/karmellow_rotate.png" class="img1" data-aos="zoom-in-up"
-                            data-aos-duration="700" easing="linear" data-aos-offset="200">
-                        <img src="assets/img/PotatoQ1.png" class="img2" data-aos="zoom-in-up" data-aos-duration="700"
-                            easing="linear" data-aos-offset="200">
-                        <img src="assets/img/NutriRice.png" class="img3" data-aos="zoom-in-up" data-aos-duration="700"
-                            easing="linear" data-aos-offset="200">
+                <div class="col-lg-8 bg-img-blue" style="margin-top: -100px;">
+                    <div class="row d-flex justify-content-center align-items-center" style="margin-top: 100px;">
+                        <img src="SVG/sharon wool.png" data-aos="zoom-in-up" data-aos-duration="700" easing="linear"
+                            data-aos-offset="200" style="width: 30%; height: auto;margin-right: -30px;">
+                        <img src="assets/img/PotatoQ1.png" data-aos="zoom-in-up" data-aos-duration="700" easing="linear"
+                            data-aos-offset="200" style="width: 25%; height: auto;margin-left: -10px;">
+                        <img src="SVG/3D BerasKimbapssal.png" data-aos="zoom-in-up" data-aos-duration="700"
+                            easing="linear" data-aos-offset="200"
+                            style="width: 40%; height: auto; margin-left: -30px; margin-top: -80px;">
                     </div>
                 </div>
                 <div class="col-lg-4 pull-right" data-aos="fade-up" data-aos-duration="700" easing="linear">
-                    <span class="pre-title insert-text"></span>
                     <div class="w-100 text-center text-sm-right m-0">
-                        <h2 class="m-0 insert-text"></h2>
+                        <h2 class="m-0 insert-text" style="color: #BD2EB8;"></h2>
                         <span class="insert-text"></span>
-                        <hr class="my-3">
+                        <div class="col col-lg-10 ml-auto p-0">
+                            <hr class="mt-2 mb-4" style="background-color: #BD2EB8;">
+                            <p class="insert-text" style="text-align: justify;">
+                        </div>
                     </div>
-                    <p class="text-center text-sm-right insert-text">
                     </p>
                 </div>
             </div>
@@ -156,26 +154,27 @@
         <div class="container">
             <div class="row d-flex flex-column-reverse flex-lg-row flex-xs-column-reverse">
                 <div class="col-lg-5" data-aos="fade-up" data-aos-duration="700" easing="linear">
-                    <span class="title-bubble mx-auto mx-sm-0 my-3 insert-text"
-                        style="color: black; background-color: lightskyblue;"></span>
                     <div class="w-100 text-center text-sm-left m-0">
-                        <h2 class="m-0 insert-text"></h2>
+                        <h2 class="m-0 insert-text" style="color: #01B5E6"></h2>
                         <span class="insert-text"></span>
-                        <hr class="my-3">
+                        <div class="col col-lg-8 mr-auto p-0">
+                            <hr class="mt-2 mb-4" style="background-color: #01B5E6">
+                            <p class="insert-text" style="text-align: justify;">
+                        </div>
                     </div>
-                    <p class="text-center text-sm-left insert-text">
                     </p>
                 </div>
-                <div class="col-lg-7 bg-img-purple">
-                    <div>
+                <div class="col-lg-7 bg-img-purple" style="margin-top: -80px;">
+                    <div style="margin-top: 80px;">
                         <div class="row d-flex justify-content-center align-items-center">
                             <img src="assets/img/cone7.png" data-aos="zoom-in-up" data-aos-duration="700"
-                                easing="linear" data-aos-offset="200" style="width: 33%; height: auto;">
-                            <img src="assets/img/IceCream3.png" data-aos="zoom-in-up" data-aos-duration="700"
-                                easing="linear" data-aos-offset="200" style="width: 25%; height: 50%;">
-                            <img src="assets/img/LolyEskrim4.png" data-aos="zoom-in-up" data-aos-duration="700"
-                                easing="linear" data-aos-offset="200"
-                                style="width: 17%; height: 50%; padding-bottom: 20%;">
+                                easing="linear" data-aos-offset="200" style="width: 35%; height: auto;">
+                            <img src="SVG/soes.png" data-aos="zoom-in-up" data-aos-duration="700" easing="linear"
+                                data-aos-offset="200"
+                                style="width: 40%; height: 50%; margin-left: -50px; margin-bottom: -50px;">
+                            <img src="SVG/mochi.png" data-aos="zoom-in-up" data-aos-duration="700" easing="linear"
+                                data-aos-offset="200"
+                                style="width: 25%; height: 50%;margin-top: -50px; margin-left: -20px; margin-top: -100px;">
                         </div>
                     </div>
                 </div>
@@ -184,11 +183,11 @@
     </section>
     <section class="sections">
         <div class="container">
-            <div class="col-12 bg-img-blue pt-5">
+            <div class="col-12 bg-img-blue pt-5" style="background-size: 50% 200px!important;">
                 <div class="row">
                     <div class="col-sm d-flex justify-content-center text-center">
-                        <img src="assets/img/sketsa2.png" class="img-fluid" data-aos="zoom-in-up"
-                            data-aos-duration="700" easing="linear" data-aos-offset="200" />
+                        <img src="SVG/3D_Boy.svg" class="img-fluid" data-aos="zoom-in-up" data-aos-duration="700"
+                            easing="linear" data-aos-offset="200" />
                     </div>
                     <div class="col-sm d-flex justify-content-center text-center">
                         <img src="assets/img/sketsa1.png" class="img-fluid" data-aos="zoom-in-up"
@@ -200,10 +199,12 @@
                     </div>
                 </div>
                 <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                    <span class="title-bubble my-3 insert-text" style="color: white; background-color: red;"></span>
-                    <h3 class="insert-text"></h3>
-                    <span class="my-2 insert-text"></span>
-                    <p class="insert-text"></p>
+                    <h3 class="my-0 insert-text" style="color: #EA1B24;"></h3>
+                    <span class="my-0 insert-text"></span>
+                    <hr class="w-50 mb-3 mt-1" style="background-color: #EA1B24;">
+                    <div class="col col-lg-8 mx-auto">
+                        <p class="insert-text" style="font-weight: 200; font-size: small;"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -220,13 +221,14 @@
                     </div>
                 </div>
                 <div class="col-lg-4 pull-right" data-aos="fade-up" data-aos-duration="700" easing="linear">
-                    <span class="title-bubble mx-auto mx-sm-0 my-3 gold insert-text" style="color: black;"></span>
                     <div class="w-100 text-center text-sm-right m-0">
-                        <h2 class="m-0 insert-text"></h2>
+                        <h2 class="m-0 insert-text gold background"></h2>
                         <span class="insert-text"></span>
-                        <hr class="my-3 gold">
+                        <div class="col col-lg-10 ml-auto p-0">
+                            <hr class="mt-2 mb-4 gold">
+                            <p class="fs-10 text-lg-right insert-text" style="text-align: justify;">
+                        </div>
                     </div>
-                    <p class="text-center text-sm-right insert-text">
                     </p>
                 </div>
             </div>
@@ -491,6 +493,11 @@
                         classElement[i].innerHTML = text
                     });
                 })
+            if (language === "en") {
+                document.getElementById('navbaricon').src = "assets/img/english-translate.png";
+            } else {
+                document.getElementById('navbaricon').src = "assets/img/indo-translate.png";
+            }
         }
 
         // on load function to grab local storage for default language prefered.

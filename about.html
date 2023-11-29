@@ -44,7 +44,7 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            <img src="assets/img/translation.svg" class="translation-icon">
+                            <img src="assets/img/translation.svg" class="translation-icon" id="navbaricon">
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="javascript:change_language('en');">English (US)</a>
@@ -316,6 +316,11 @@
                         classElement[i].innerHTML = text
                     });
                 })
+            if (language === "en") {
+                document.getElementById('navbaricon').src = "assets/img/english-translate.png";
+            } else {
+                document.getElementById('navbaricon').src = "assets/img/indo-translate.png";
+            }
         }
 
         // on load function to grab local storage for default language prefered.

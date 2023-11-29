@@ -1,13 +1,17 @@
 @media (max-width: 1280px) {
-  #section-home .hero-wrapper .hero-title .bottom-title, #section-home .hero-wrapper .hero-title .upper-title {
+
+  #section-home .hero-wrapper .hero-title .bottom-title,
+  #section-home .hero-wrapper .hero-title .upper-title {
     font-size: 1rem;
   }
 }
+
 @media (min-width: 992px) {
   .mobile-only {
     display: none !important;
   }
 }
+
 @media (max-width: 991px) {
   .navbar {
     background: #000;
@@ -25,9 +29,9 @@
     margin-top: 15px;
   }
 
-  #section-home .hero-wrapper {
+  /* #section-home .hero-wrapper {
     height: 50vh;
-  }
+  } */
 
   h2 {
     text-align: center;
@@ -61,6 +65,7 @@
     transform: scale(0.6);
   }
 }
+
 @media (max-width: 1199px) {
   #section-about .img-wrapper .img4 {
     position: absolute;
@@ -102,6 +107,7 @@
   #section-home {
     height: auto;
   }
+
   #section-home h1 {
     font-size: 48px;
   }
@@ -113,10 +119,12 @@
   .navbar .navbar-nav .nav-link {
     font-size: 14px;
   }
+
   .navbar .auth-btn .btn {
     padding: 5px 20px;
   }
 }
+
 @media (max-width: 768px) {
   .navbar .navbar-brand .school-name {
     display: inline;
@@ -127,9 +135,11 @@
     display: flex;
     margin: auto;
   }
+
   #section-osis .owl-carousel .owl-nav button.owl-next {
     right: 0;
   }
+
   #section-osis .owl-carousel .owl-nav button.owl-prev {
     left: 0;
   }
@@ -137,6 +147,7 @@
   #section-program .owl-carousel .owl-nav button.owl-next {
     right: -15px;
   }
+
   #section-program .owl-carousel .owl-nav button.owl-prev {
     left: -15px;
   }
@@ -164,9 +175,11 @@
   #section-home {
     height: unset;
   }
+
   #section-home p {
     text-align: center;
   }
+
   #section-home .btn-main {
     margin: auto;
     display: flex;
@@ -185,6 +198,7 @@
     width: 50%;
   }
 }
+
 @media (max-width: 767px) {
   .section-footer ul.footer-link {
     width: fit-content;
@@ -229,6 +243,7 @@
   h2 {
     text-align: center;
   }
+
   h2:after {
     margin: 15px auto;
     display: flex;
@@ -250,13 +265,16 @@
     height: 180px;
     margin-bottom: 15px;
   }
+
   #section-program .owl-carousel .item h5 {
     font-size: 24px;
     text-align: center;
   }
+
   #section-program .owl-carousel .item h5:after {
     display: none;
   }
+
   #section-program .owl-carousel .item p {
     text-align: center;
   }
@@ -264,6 +282,7 @@
   #section-osis .owl-carousel .item .card {
     width: 100%;
   }
+
   #section-osis .owl-carousel .item .card .card-img {
     border-radius: 15px 15px 0 0;
   }
