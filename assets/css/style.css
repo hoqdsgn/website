@@ -537,12 +537,6 @@ h2 {
   text-align: right;
 }
 
-/* #section-project h2:after {
-  margin-top: 45px;
-  margin-left: auto;
-  margin-bottom: -50px;
-} */
-
 #section-project .pre-title {
   background: #C028B9;
   color: #fff;
@@ -650,6 +644,24 @@ h2 {
 }
 
 /* my section */
+#whatsapp-logo {
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  /* WhatsApp green color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .sections {
   background: #000;
   padding-top: 120px;
