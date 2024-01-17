@@ -54,6 +54,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 300px;
+    cursor: pointer;
+}
+
+.bg-img img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
 }
 
 ul li a {
@@ -71,3 +77,17 @@ ul li a:hover {
         padding-top: 120px;
     }
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

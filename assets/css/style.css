@@ -254,6 +254,9 @@ h2 {
 .navbar .navbar-nav .nav-item {
   margin: 0 15px;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -285,6 +288,7 @@ h2 {
 
 .navbar .dropdown-menu .dropdown-item {
   color: #fff;
+  font-weight: 300;
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
@@ -645,10 +649,6 @@ h2 {
 
 /* my section */
 #whatsapp-logo {
-  z-index: 999;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
   width: 60px;
   height: 60px;
   background-color: #25d366;
@@ -660,6 +660,17 @@ h2 {
   color: #fff;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#placeholder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .sections {
@@ -718,6 +729,19 @@ hr {
   background-position: bottom;
 }
 
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+p.insert-text {
+  font-size: large;
+}
 /* Section End */
 
 

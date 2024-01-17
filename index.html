@@ -64,9 +64,13 @@
             </ul>
         </div>
     </nav>
-    <a href="https://wa.me/6289512233891" target="_blank" id="whatsapp-logo">
-        <i class="fa-brands fa-whatsapp" style="font-size:36px"></i>
-    </a>
+    <div id="placeholder">
+        <div class="blink_me mr-3 text-white">SCROLL FOR MORE</div>
+        <a href="https://wa.me/6289512233891" target="_blank" id="whatsapp-logo">
+            <i class="fa-brands fa-whatsapp" style="font-size:36px"></i>
+        </a>
+    </div>
+    
     <section id="section-home">
         <div class="container-fluid">
             <div class="row">
@@ -112,15 +116,6 @@
                             style="width: 30%; height: auto; margin-right: -100px; margin-top: -190px;transform: translate(0px, -120px);">
                     </div>
                 </div>
-                <!-- <div class="img-wrapper desktop-only">
-                        <img src="assets/img/laptop.png" class="img1">
-                        <img src="assets/img/sec1-ChikakoPot1.png" class="img2" data-aos="zoom-in-up"
-                            data-aos-duration="700" easing="linear" data-aos-offset="200">
-                        <img src="assets/img/sec1-Rice4.png" class="img3" data-aos="zoom-in-up" data-aos-duration="700"
-                            easing="linear" data-aos-offset="200">
-                        <img src="assets/img/sec1-suta.png" class="img4" data-aos="zoom-in-up" data-aos-duration="700"
-                            easing="linear" data-aos-offset="200">
-                    </div> -->
             </div>
         </div>
         </div>
@@ -206,7 +201,7 @@
                     <span class="my-0 insert-text"></span>
                     <hr class="w-50 mb-3 mt-1" style="background-color: #EA1B24;">
                     <div class="col col-lg-8 mx-auto">
-                        <p class="insert-text" style="font-weight: 200; font-size: small;"></p>
+                        <p class="insert-text" style="font-weight: 200;"></p>
                     </div>
                 </div>
             </div>
@@ -327,7 +322,8 @@
     </section>
     <!-- js -->
     <script src="https://kit.fontawesome.com/0a4b0b2c0f.js" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/aos.js"></script>
@@ -335,6 +331,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js" integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU" crossorigin="anonymous"></script>
     <script>
         var mymap = L.map('mapid').setView([-6.870464, 107.548002], 15);
 
@@ -473,11 +470,20 @@
             if (preloader.style.opacity > 0) {
                 preloader.style.opacity -= 1;
             } else {
-                clearInterval(fadeEffect);
                 $(".preloader").addClass("loaded");
             }
-        }, 6000);
+        }, 5000);
+        $(document).ready(function () {
+            var target = $('#section-client');
+            var scrollingSpeed = 4000; // Set your scrolling speed in milliseconds
 
+            // Animate the scroll on DOM ready
+            setTimeout(function () {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, scrollingSpeed, 'swing');
+            }, 7000);
+        });
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", on_load_text());
@@ -498,9 +504,9 @@
                     });
                 })
             if (language === "en") {
-                document.getElementById('navbaricon').src = "assets/img/english-translate.png";
+                document.getElementById('navbaricon').src = "assets/img/UK.svg";
             } else {
-                document.getElementById('navbaricon').src = "assets/img/indo-translate.png";
+                document.getElementById('navbaricon').src = "assets/img/ID.svg";
             }
         }
 

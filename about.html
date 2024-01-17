@@ -55,9 +55,12 @@
             </ul>
         </div>
     </nav>
-    <a href="https://wa.me/6289512233891" target="_blank" id="whatsapp-logo">
-        <i class="fa fa-whatsapp" style="font-size:36px"></i>
-    </a>
+    <div id="placeholder">
+        <div class="blink_me mr-3 text-white">SCROLL FOR MORE</div>
+        <a href="https://wa.me/6289512233891" target="_blank" id="whatsapp-logo">
+            <i class="fa-brands fa-whatsapp" style="font-size:36px"></i>
+        </a>
+    </div>
     <section class="section d-flex justify-content-center align-items-center">
         <div class="container">
             <div class="shadow p-3 p-md-5 d-flex flex-column-reverse flex-lg-row flex-xs-column-reverse">
@@ -75,7 +78,7 @@
 
                     </p>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end fade-in">
                     <img src="assets/img/logo.svg" width="400px">
                 </div>
             </div>
@@ -138,7 +141,9 @@
                     </ul>
                 </div>
                 <div class="col-lg-8 d-flex align-items-center justify-content-end bg-img">
-                    <img src="assets/img/hand.png" class="float-right" width="90%">
+                    <a target="_blank" href="https://maps.app.goo.gl/ZYEkumqKXxnjdRxV6">
+                        <img src="assets/img/hand.png" class="float-right" width="90%">
+                    </a>
                 </div>
             </div>
         </div>
@@ -221,7 +226,7 @@
     </section>
     <!-- js -->
     <script src="https://kit.fontawesome.com/0a4b0b2c0f.js" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/aos.js"></script>
@@ -320,9 +325,9 @@
                     });
                 })
             if (language === "en") {
-                document.getElementById('navbaricon').src = "assets/img/english-translate.png";
+                document.getElementById('navbaricon').src = "assets/img/UK.svg";
             } else {
-                document.getElementById('navbaricon').src = "assets/img/indo-translate.png";
+                document.getElementById('navbaricon').src = "assets/img/ID.svg";
             }
         }
 
