@@ -474,14 +474,14 @@
             }
         }, 5000);
         $(document).ready(function () {
-            var target = $('#section-client');
+            var target = $('#section-about');
             var scrollingSpeed = 4000; // Set your scrolling speed in milliseconds
 
             // Animate the scroll on DOM ready
             setTimeout(function () {
                 $('html, body').animate({
                     scrollTop: target.offset().top
-                }, scrollingSpeed, 'swing');
+                }, scrollingSpeed);
             }, 7000);
         });
     </script>
