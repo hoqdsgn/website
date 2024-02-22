@@ -494,10 +494,6 @@ h2 {
   color: #EA0029;
 }
 
-#section-about p {
-  font-weight: 200;
-}
-
 #section-about .img-wrapper {
   position: relative;
   margin-top: 80px;
@@ -1898,6 +1894,7 @@ p.insert-text {
   color: #fff;
   font-weight: 100;
   margin-top: 45px;
+  letter-spacing: 2px;
 }
 
 #section-work-banner .carousel-hero .item .work-icon {

@@ -294,6 +294,9 @@
   .navbar.scrolled {
     padding: 10px 15px;
   }
+  .text-content {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=mobile.css.map */
